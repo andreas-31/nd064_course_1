@@ -28,7 +28,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: exercises/python-helloworld
           push: true
           tags: user/app:latest
           file: exercises/python-helloworld/Dockerfile
