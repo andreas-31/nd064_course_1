@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-helloworld
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: go-helloworld
+  template:
+    metadata:
+      labels:
+        name: go-helloworld
+    spec:
+      containers:
+      - name: application
+        image: itsecat/go-helloworld:v1.0.0
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 6111
