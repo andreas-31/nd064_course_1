@@ -2,7 +2,7 @@ namespace:
   name: staging 
  
 service:
-  port: 8111
+  port: 80
   type: LoadBalancer
 
 image:
