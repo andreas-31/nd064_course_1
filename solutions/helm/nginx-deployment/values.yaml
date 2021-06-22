@@ -3,7 +3,7 @@ namespace:
  
 service:
   port: 8111
-  type: ClusterIP
+  type: LoadBalancer
 
 image:
   repository: nginx 
